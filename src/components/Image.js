@@ -4,11 +4,12 @@ function Image (props){
     return(
         <div>
             <img
-                alt={props.key}
-                src={props.src}
+                alt={props.image.id}
+                src={props.image.src}
+                onClick={() => {props.clicked(props.image.id)}}
             />
         </div>
-    )
-}
+    );
+};
 
 export default Image
