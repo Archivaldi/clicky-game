@@ -1,8 +1,9 @@
 import React from "react"
+import "./App.css"
 
 function Image (props){
     return(
-        <div>
+        <div className="img">
             <img
                 alt={props.image.id}
                 src={props.image.src}
