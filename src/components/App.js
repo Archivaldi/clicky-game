@@ -15,27 +15,23 @@ class App extends React.Component {
 
     scoreUp = () => {
         this.setState(prevState => {
-            return {
-                score: prevState.score + 1,
-                topScore: prevState.topScore + 1
-            };
+            if (this.state.score === this.state.topScore){
+                return {
+                    score: prevState.score + 1,
+                    topScore: prevState.topScore + 1
+                };
+            } else {
+                return {
+                    score: prevState.score + 1
+                }
+            }
         });
     };
 
     setNewGame = () => {
         this.setState({
-            score: 0,
-            topScore: 0
+            score: 0
         });
-    };
-
-    shuffle = () => {
-        this.setState(prevState => {
-           const newArr =  prevState.images.sort(() => Math.random() - 0.5);
-           return {
-            images: newArr
-        }
-        })
     };
 
     returnAllFalse = () => {
