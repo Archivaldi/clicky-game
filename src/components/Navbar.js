@@ -10,8 +10,9 @@ function Navbar(props) {
                         <button id="brand" className="btn navbar-brand btn-primary">Clicky-Game</button>
                     </div>
                     <div className="collapse navbar-collapse">
+                    <button id="message" className="btn btn-lg btn-primary text-center">{props.message}</button>
                         <ul className="nav navbar-nav navbar-right">
-                            <button className="btn btn-lg btn-primary"> Score: {props.score} </button>
+                            <button className="btn btn-lg btn-primary"> Score: {props.score} </button>                            
                             <button className="btn btn-lg btn-primary"> Top Score: {props.topScore}</button>
                         </ul>
                     </div>

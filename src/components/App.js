@@ -10,7 +10,8 @@ class App extends React.Component {
         this.state = {
             score: 0,
             topScore: 0,
-            images: imagesData
+            images: imagesData,
+            message: "Click an image to begin!"
         };
     };
 
@@ -19,11 +20,13 @@ class App extends React.Component {
             if (this.state.score === this.state.topScore){
                 return {
                     score: prevState.score + 1,
-                    topScore: prevState.topScore + 1
+                    topScore: prevState.topScore + 1,
+                    message: "You guessed correctly!"
                 };
             } else {
                 return {
-                    score: prevState.score + 1
+                    score: prevState.score + 1,
+                    message: "You guessed correctly!"
                 }
             }
         });
@@ -31,7 +34,8 @@ class App extends React.Component {
 
     setNewGame = () => {
         this.setState({
-            score: 0
+            score: 0,
+            message: "You guessed incorrectly!"
         });
     };
 
@@ -86,7 +90,7 @@ class App extends React.Component {
         } else {
             return (
                 <div>
-                    <Navbar score={this.state.score} topScore={this.state.topScore} />
+                    <Navbar score={this.state.score} topScore={this.state.topScore} message={this.state.message}/>
                     <div className="imageContainer container">
                     {showImages}
                     </div>

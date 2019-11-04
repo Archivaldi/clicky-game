@@ -13,7 +13,6 @@ img {
 }
 .imageContainer {
     width: 950px;
-    /* margin-top: 16%; */
 }
 
 .navbar-default {
@@ -51,4 +50,9 @@ img {
 
 .jumbotron p {
     font-size: 30px;
+}
+
+#message {
+    font-size: 55px;
+    padding-left: 155px;
 }
