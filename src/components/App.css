@@ -56,3 +56,10 @@ img {
     font-size: 55px;
     padding-left: 155px;
 }
+
+#win {
+    width: 750px;
+    height: 750px;
+    border: 0;
+    margin-top: 0px;
+}

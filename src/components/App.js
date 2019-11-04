@@ -54,7 +54,10 @@ class App extends React.Component {
     winGame = () => {
         return (
             <div>
-                <h1>You WON!</h1>
+                <Navbar score={this.state.score} topScore={this.state.topScore} message={this.state.message}/>
+                <div className="container text-center">
+                    <img id="win" src="https://thumbs.gfycat.com/CircularEnormousFreshwatereel-small.gif" alt="win" />
+                </div>
             </div>
         );
     };
