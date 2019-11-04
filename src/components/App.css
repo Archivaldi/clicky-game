@@ -2,6 +2,8 @@ img {
     width: 200px;
     height: 200px;
     display: inline;
+    margin: 15px;
+    border: 1px outset grey
 }
 
 .img {
@@ -10,6 +12,43 @@ img {
     display: inline;
 }
 .imageContainer {
-    width: 850px;
+    width: 950px;
+    /* margin-top: 16%; */
 }
 
+.navbar-default {
+    background-color: #0b324f;
+    height: 100px;
+    border-bottom: 0;
+}
+
+#brand {
+    border: 0;
+    margin: 5px;
+    padding: 35px;
+    color: white;
+    font-size: 70px;
+    background-color: #0b324f;
+}
+
+.btn-lg {
+    border: 0;
+    margin: 5px;
+    padding: 15px;
+    font-size: 40px;
+    background-color: #0b324f;
+}
+
+.jumbotron {
+    padding-top: 100px; 
+    background-color: #0b324f;
+    color: white
+}
+
+.jumbotron h1 {
+    font-size: 100px;
+}
+
+.jumbotron p {
+    font-size: 30px;
+}

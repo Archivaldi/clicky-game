@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "./Image"
 import imagesData from "./imagesData"
+import Navbar from "./Navbar"
 import "./App.css"
 
 class App extends React.Component {
@@ -85,11 +86,8 @@ class App extends React.Component {
         } else {
             return (
                 <div>
-                    <div>
-                        <p>{this.state.score}</p>
-                        <p>{this.state.topScore}</p>
-                    </div>
-                    <div className="imageContainer">
+                    <Navbar score={this.state.score} topScore={this.state.topScore} />
+                    <div className="imageContainer container">
                     {showImages}
                     </div>
                 </div>
